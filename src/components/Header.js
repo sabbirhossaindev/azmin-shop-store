@@ -13,7 +13,7 @@ const Header = () => {
 
     useEffect(()=>{
         setThemeMode(darkMode);
-        console.log(darkMode);
+        // console.log(darkMode);
     },[darkMode, setThemeMode]);
 
     const {
