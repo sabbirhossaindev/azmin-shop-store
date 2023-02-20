@@ -9,9 +9,11 @@ import { Router } from "@reach/router";
 import Home from './Pages/Home';
 import Cart from './Pages/Cart';
 import ProductDetails from "./Pages/ProductDetails";
-// import SignIn from "./Pages/SignIn";
-// import Register from "./Pages/Register";
-// import MyAccount from "./Pages/MyAccount";
+import SignIn from "./Pages/SignIn";
+import Register from "./Pages/Register";
+import MyAccount from "./Pages/MyAccount";
+import Footer from "./Pages/Footer";
+
 
 
 function App() {
@@ -21,11 +23,12 @@ function App() {
       <Header/>
       <Router>
         <Home path="/" />
-        {/* <MyAccount path="my-account" />
+        <MyAccount path="my-account" />
         <SignIn path="sign-in"/>
-        <Register path="register"/> */}
+        <Register path="register"/>
         <ProductDetails path="product-details/:productId"/>
         <Cart path="/cart" />
+        <Footer path="/footer" />
       </Router>
     </main>
   );
