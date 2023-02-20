@@ -13,8 +13,8 @@ const Header = () => {
 
     useEffect(()=>{
         setThemeMode(darkMode);
-        console.log(darkMode)
-    },[darkMode]);
+        console.log(darkMode);
+    },[darkMode, setThemeMode]);
 
     const {
         isEmpty,
@@ -28,7 +28,7 @@ const Header = () => {
                 style={{ width: '100%', position: 'fixed', zIndex: 100}}
         >
         <Container>
-          <Link to="/">
+          <Link to="/" style={{textDecoration: 'none'}}>
             <Navbar.Brand className={darkMode? 'text-dark-primary': 'text-light-primary'}>
                 <b>Azmin Shop Store</b>
             </Navbar.Brand>
@@ -47,6 +47,7 @@ const Header = () => {
               </Nav.Link>
               <Link
                 to="/cart"
+                style={{textDecoration: 'none'}}
                 className={`${darkMode? 'text-dark-primary': 'text-light-primary'} d-flex align-items-center`}
               >
                 <BiCart size="2rem"/>
