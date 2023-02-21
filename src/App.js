@@ -12,7 +12,6 @@ import ProductDetails from "./Pages/ProductDetails";
 import SignIn from "./Pages/SignIn";
 import Register from "./Pages/Register";
 import MyAccount from "./Pages/MyAccount";
-import Footer from "./Pages/Footer";
 
 
 
@@ -28,7 +27,6 @@ function App() {
         <Register path="register"/>
         <ProductDetails path="product-details/:productId"/>
         <Cart path="/cart" />
-        <Footer path="/footer" />
       </Router>
     </main>
   );

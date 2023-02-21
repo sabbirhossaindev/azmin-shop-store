@@ -22,4 +22,43 @@ const useThemeHook = () =>{
     return [theme];
 }
 
-export { ThemeProvider, ThemeContext, useThemeHook};
+export { ThemeProvider, ThemeContext, useThemeHook };
+
+// use too app.css
+    
+/* theme dark */
+// .bg-black{
+//     background-color: black;
+//   }
+//   .bg-light-black{
+//     background-color: #262626 !important;
+//   }
+//   .text-black{
+//     color: black;
+//   }
+//   .text-light-black{
+//     color: #262626;
+//   }
+//   .bg-dark-primary{
+//     background-color: #fcbc73 !important;
+//   }
+//   .text-dark-primary{
+//     color: #fcbc73 !important;
+//   }
+  
+  /* theme light */
+//   .bg-light{
+//     background-color: white;
+//   }
+//   .bg-light-2{
+//     background-color: #dadcde;
+//   }
+//   .bg-light-primary{
+//     background-color: #191659 !important;
+//   }
+//   .text-light-primary{
+//     color: #191659 !important;
+//   }
+//   .react-tel-input input{
+//     width: 100% !important;
+//   }
